@@ -12,15 +12,14 @@ public class DebugSix3
     int userNum, val;
     final int MIN = 1;
     final int MAX = 20;
-    userNumString = JOptionPane.showInputDialog(null,
-        "Enter a number between  + MIN + " and " + MAX +  inclusive");
+    userNumString = JOptionPane.showInputDialog(null, "Enter a number between "  + MIN + " & " + MAX + " inclusive");
     userNum = Integer.parseInt(userNumString);
     while(userNum < MIN || userNum > MAX)
     {
        userNumString = JOptionPane.showInputDialog(null,
         "Number out of range" +
-        "\nEnter a number between " + MIN +  and " + MAX + " inclusive");
-       userNum = Integer.parseInt(userNuString);
+        "\nEnter a number between " + MIN + " and"  + MAX + " inclusive");
+       userNum = Integer.parseInt(userNumString);
     }
     for(val = userNum; val < 0; --val)
     {

@@ -4,8 +4,8 @@ public class CompareLoopTimes
    public static void main(String[] args)
    {
       int startTime, endTime;
-      final int REPEAT = 100_000;
-      final int FACTOR = 1_000_000;
+      final int REPEAT = 100000;
+      final int FACTOR = 1000000;
       LocalDateTime now;
       now = LocalDateTime.now();
       startTime = now.getNano();
@@ -14,7 +14,7 @@ public class CompareLoopTimes
       now = LocalDateTime.now();
       endTime = now.getNano();
       System.out.println("Time for loops starting from 0: " +
-         ((endTime - startTime) / FACTOR) + " milliseconds");
+              ((endTime - startTime) / FACTOR) + " milliseconds");
       now = LocalDateTime.now();
       startTime = now.getNano();
       for(int x = REPEAT; x >= 0; --x)
@@ -22,6 +22,6 @@ public class CompareLoopTimes
       now = LocalDateTime.now();
       endTime = now.getNano();
       System.out.println("Time for loops ending with 0: " +
-         ((endTime - startTime) / FACTOR) + " milliseconds");
+              ((endTime - startTime) / FACTOR) + " milliseconds");
    }
 }
